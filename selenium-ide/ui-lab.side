@@ -89,6 +89,27 @@
         ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "9a5fc01e-9d96-47f1-ae1d-06a9f08bbbf6",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=message",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "09827414-e9fd-4ce0-8ce4-c32631bb1fbf",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Web form - target page",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f1b233c-bacb-447c-87bf-86ab51483821",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=message",
+      "targets": [],
+      "value": "Received"
     }]
   }],
   "suites": [{

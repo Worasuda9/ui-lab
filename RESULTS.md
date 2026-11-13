@@ -34,6 +34,14 @@ Calories per slice: 375 | pass |
 ## Part 1: Selenium IDE
 - Firefox version and Node.js version: Firefox version: 151.0.2 Node.js version: v22.14.0
 - Step 1.4, the line of the failed check and the line Tests:
+  Running project ui-lab
+    Running suite Default Suite
+      ✕ Running test web form (17418 ms)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        17.679 s
 - Step 1.5, target chosen for Submit, and why the recorded one was fragile:
 - Step 1.6, commands changed, added or deleted after recording:
 - Step 1.6, the pizza names of run 1 and run 2, from the lines info: echo:
