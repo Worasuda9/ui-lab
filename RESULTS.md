@@ -3,8 +3,8 @@
 Tool parts that I chose:
 
 ## Part 0
-- Step 0.1, Chrome version: 156.0.8078.81 (Official Build) (arm64) 
-- Step 0.3, ChromeDriver version:
+- Step 0.1, Chrome version: 158.0.8127.18 (Official Build) (arm64) 
+- Step 0.3, ChromeDriver version: ChromeDriver 158.0.8127.18
 - Step 0.4, locator of Pizza, Please!:
 - Step 0.4, locator of Excluded tools:
 - Step 0.4, locator of Must be vegetarian:
