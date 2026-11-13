@@ -9,17 +9,27 @@ Tool parts that I chose:
 - Step 0.4, locator of Excluded tools: $x("//label[normalize-space()='Excluded tools']/following-sibling::select")
 - Step 0.4, locator of Must be vegetarian: $x("//input[@id='default-checkbox' and @type='checkbox']")
 - Step 0.4, locator of Custom Pizza Name: document.querySelector("input#pizza-name")
-- Step 0.5, pizza name, tool and calories of the run by hand:
+- Step 0.5, pizza name, tool and calories of the run by hand: Crisp, Scissors, 375
 
 | Step | Actual result | Pass or fail |
 |------|---------------|--------------|
-| 1    | | |
-| 2    | | |
-| 3    | | |
-| 4    | | |
-| 5    | | |
-| 6    | | |
-| 7    | | |
+| 1    | The heading reads Looking to break out of your pizza routine? | Pass |
+| 2    | Max Calories per Slice, Excluded tools, Must be vegetarian and Custom Pizza Name appear | pass |
+| 3    | The fields show these values | pass |
+| 4    | Our recommendation:
+Name: Crisp
+Dough: Thick
+Ingredients:
+Olive oil
+Bianco di Nizza tomatoes
+Mozzarella
+Parmesan cheese
+Garlic
+Tool: Scissors
+Calories per slice: 375 | pass |
+| 5    | The page says Please log in first. | pass |
+| 6    | The page shows Latest pizza recommendations | pass |
+| 7    | The line shows the pizza name with the same tool as in step 4 | pass |
 
 ## Part 1: Selenium IDE
 - Firefox version and Node.js version:
