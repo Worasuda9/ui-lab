@@ -32,7 +32,7 @@ Calories per slice: 375 | pass |
 | 7    | The line shows the pizza name with the same tool as in step 4 | pass |
 
 ## Part 1: Selenium IDE
-- Firefox version and Node.js version:
+- Firefox version and Node.js version: Firefox version: 151.0.2 Node.js version: v22.14.0
 - Step 1.4, the line of the failed check and the line Tests:
 - Step 1.5, target chosen for Submit, and why the recorded one was fragile:
 - Step 1.6, commands changed, added or deleted after recording:
