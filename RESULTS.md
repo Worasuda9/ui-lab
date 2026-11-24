@@ -55,10 +55,10 @@ Time:        17.679 s
 - Step 3.8, run 2, result, elapsed time and pizza name: 00:00:15, Lab Pizza 20261124-161627
 
 ## Part B
-1.
-2.
-3.
-4.
-5.
-6.
-7.
+1. At first it used id=floating_filled for multiple boxes, so it might be unreliable, so we change to make the locator simpler, clearer, and more reliable.
+2. It is consistency-based test oracle because it compares recommended tool in step 4 with tool shown in admin list in step 7, so it could catches cases where system saves or displays different tool from original one.
+3. It need vegetarian indicator, ingredient information, or ingredient dataset.
+4. Selenium IDE records browser actions, but waits for loaded elements may need to be added manually. Robot Framework uses explicit waiting keywords, making the test steps easier to understand. Robot Framework required more setup and coding but supported reusable keywords. Robot Framework also provides detailed HTML reports, while Selenium IDE mainly shows command results and errors.
+5. I would choose Robot Framework because test cases are readable, reusable keywords make easier, and HTML reports also help identify failures easier.
+6. As i had answer in step 1.5, original locator, css=.btn, uses styling class that other buttons may also use. xpath=//button[@type='submit'], identifies button by its function, making it more reliable if page layout or styling changes.
+7. I would update `${MAX CALORIES}` in `resources/quickpizza.resource`. Since test keywords reuse this variable, changing locator in one place updates all related steps without modifying `pizza_scenario.robot`.
