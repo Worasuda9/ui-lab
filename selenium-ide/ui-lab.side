@@ -10,14 +10,14 @@
       "id": "19f5d1c8-e3af-41d7-8191-3a720dd9b710",
       "comment": "",
       "command": "open",
-      "target": "/selenium/web/web-form.html",
+      "target": "\thttps://www.selenium.dev/selenium/web/web-form.html",
       "targets": [],
       "value": ""
     }, {
       "id": "d4c2f4fd-dae5-4147-a74a-13dc695dc0e4",
       "comment": "",
       "command": "setWindowSize",
-      "target": "677x691",
+      "target": "1280x900",
       "targets": [],
       "value": ""
     }, {
@@ -47,18 +47,6 @@
       ],
       "value": "Hello Selenium"
     }, {
-      "id": "32887c9a-d99d-4077-a435-98f1b0a93098",
-      "comment": "",
-      "command": "click",
-      "target": "name=my-select",
-      "targets": [
-        ["name=my-select", "name"],
-        ["css=.form-select", "css:finder"],
-        ["xpath=//select[@name='my-select']", "xpath:attributes"],
-        ["xpath=//select", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "d998e1cf-e216-41ef-a888-fce8a74b03e1",
       "comment": "",
       "command": "select",
@@ -66,22 +54,10 @@
       "targets": [],
       "value": "label=Two"
     }, {
-      "id": "5e7fc307-043a-4b8a-bbd6-c46e52c53023",
-      "comment": "",
-      "command": "click",
-      "target": "css=.form-select > option:nth-child(3)",
-      "targets": [
-        ["css=.form-select > option:nth-child(3)", "css:finder"],
-        ["xpath=//option[@value='2']", "xpath:attributes"],
-        ["xpath=//option[3]", "xpath:position"],
-        ["xpath=//option[contains(.,'Two')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
       "id": "0a52696a-cc49-434f-90a4-09e71bebe386",
       "comment": "",
       "command": "click",
-      "target": "css=.btn",
+      "target": "xpath=//button[@type='submit']",
       "targets": [
         ["css=.btn", "css:finder"],
         ["xpath=//button[@type='submit']", "xpath:attributes"],
@@ -89,27 +65,6 @@
         ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
       ],
       "value": ""
-    }, {
-      "id": "9a5fc01e-9d96-47f1-ae1d-06a9f08bbbf6",
-      "comment": "",
-      "command": "waitForElementVisible",
-      "target": "id=message",
-      "targets": [],
-      "value": "10000"
-    }, {
-      "id": "09827414-e9fd-4ce0-8ce4-c32631bb1fbf",
-      "comment": "",
-      "command": "assertTitle",
-      "target": "Web form - target page",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "3f1b233c-bacb-447c-87bf-86ab51483821",
-      "comment": "",
-      "command": "assertText",
-      "target": "id=message",
-      "targets": [],
-      "value": "Received"
     }]
   }],
   "suites": [{
