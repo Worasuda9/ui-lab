@@ -56,7 +56,7 @@ Time:        17.679 s
 - Step 2.20, full run 2, time and number of tests:
 
 ## Part 3: Robot Framework
-- robot --version:
+- robot --version: Robot Framework 7.5.1 (Python 3.13.11 on darwin)
 - Step 3.2, failure message for the wrong title:
 - Step 3.8, run 1, result, elapsed time and pizza name:
 - Step 3.8, run 2, result, elapsed time and pizza name:
