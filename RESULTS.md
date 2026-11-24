@@ -57,7 +57,7 @@ Time:        17.679 s
 
 ## Part 3: Robot Framework
 - robot --version: Robot Framework 7.5.1 (Python 3.13.11 on darwin)
-- Step 3.2, failure message for the wrong title:
+- Step 3.2, failure message for the wrong title: The Web Form Opens :: Open the web form and check its title. Title should have been 'Web Form' but was 'Web form'.
 - Step 3.8, run 1, result, elapsed time and pizza name:
 - Step 3.8, run 2, result, elapsed time and pizza name:
 
