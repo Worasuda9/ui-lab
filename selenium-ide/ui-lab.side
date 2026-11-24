@@ -2,7 +2,7 @@
   "id": "74a1258b-0c72-4e95-8951-4778898bec56",
   "version": "2.0",
   "name": "ui-lab",
-  "url": "https://www.selenium.dev",
+  "url": "https://quickpizza.grafana.com",
   "tests": [{
     "id": "20513f7a-c33a-4ab9-afc2-66257e2b9b5e",
     "name": "web form",
@@ -65,6 +65,237 @@
         ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "edb66981-3e78-4c2d-b3d2-167e1bda1938",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=message",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "52e1879d-3b33-44ab-ae90-27b79ccefcad",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Web form - target page",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f48b5c76-4fad-42a1-876c-65292eb9f718",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=message",
+      "targets": [],
+      "value": "Received!"
+    }]
+  }, {
+    "id": "75550643-e9c3-4373-8fea-aeee1cffc6e2",
+    "name": "QP-01 customer",
+    "commands": [{
+      "id": "42ead679-591e-42aa-86f8-8abca72fc7e5",
+      "comment": "",
+      "command": "open",
+      "target": "https://quickpizza.grafana.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "876f1487-20a2-40e2-9bbd-41ba4fdceb50",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=h1",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "df39e8a3-fcc1-42ea-95fa-2ec0d73f994a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [],
+      "value": "Looking to break out of your pizza routine?"
+    }, {
+      "id": "fed74d11-7380-483b-8f38-ffd3ed7fd444",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//label[.//span[normalize-space()='Advanced']]",
+      "targets": [
+        ["css=.w-9", "css:finder"],
+        ["xpath=//label/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32d875cf-aa3f-4561-b0cd-4b8583c61303",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//label[normalize-space()='Max Calories per Slice']/../input",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "828bd259-1384-44de-959e-c86b49bea240",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=select",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "88793cb0-f0f7-4d82-9f45-c61fd3f6b111",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=default-checkbox",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "0b9ec5f9-ed1c-452f-a93a-534ff35da424",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=input#pizza-name",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "b2862cbe-f1d7-4ba1-8e7d-9634f4e36b1d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "const d = new Date(); const two = (n) => String(n).padStart(2, '0'); const day = d.getFullYear() + two(d.getMonth() + 1) + two(d.getDate()); const time = two(d.getHours()) + two(d.getMinutes()) + two(d.getSeconds()); return 'Lab Pizza ' + day + '-' + time;",
+      "targets": [],
+      "value": "pizzaName"
+    }, {
+      "id": "3963d33b-489a-41e1-949c-fde54e936b4d",
+      "comment": "",
+      "command": "echo",
+      "target": "${pizzaName}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26cd296d-41d3-4d4b-ade2-a7ea0bbb4661",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//label[normalize-space()='Max Calories per Slice']/../input",
+      "targets": [],
+      "value": "600"
+    }, {
+      "id": "cff0ab21-413f-4710-8937-ca55b1207a22",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//select/option[normalize-space()='Knife']",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "be0c78e1-2153-46d7-b1a7-dd264c6ae14c",
+      "comment": "",
+      "command": "addSelection",
+      "target": "css=select",
+      "targets": [],
+      "value": "label=Knife"
+    }, {
+      "id": "80bdb0c1-bbc8-46a3-ac00-d85a92fdf43e",
+      "comment": "",
+      "command": "click",
+      "target": "id=default-checkbox",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14b75fae-8b41-4093-8b21-e2ca68ecff91",
+      "comment": "",
+      "command": "type",
+      "target": "css=input#pizza-name",
+      "targets": [],
+      "value": "${pizzaName}"
+    }, {
+      "id": "b978cdcc-7a86-4c5c-bdec-a06754b17688",
+      "comment": "",
+      "command": "assertValue",
+      "target": "xpath=//label[normalize-space()='Max Calories per Slice']/../input",
+      "targets": [],
+      "value": "600"
+    }, {
+      "id": "e91a0b9d-cf41-436f-af05-b498666fba71",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "css=select",
+      "targets": [],
+      "value": "Knife"
+    }, {
+      "id": "3096dc53-5485-4a3a-8658-4adb530a4665",
+      "comment": "",
+      "command": "assertChecked",
+      "target": "id=default-checkbox",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c8b537a-b43a-4ba2-b98c-834fe8a69cac",
+      "comment": "",
+      "command": "assertValue",
+      "target": "css=input#pizza-name",
+      "targets": [],
+      "value": "${pizzaName}"
+    }, {
+      "id": "2e808c48-b61e-403d-af68-83368010d6ba",
+      "comment": "",
+      "command": "click",
+      "target": "name=pizza-please",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8137b290-5c5b-4cc0-966e-f585187fd071",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//p[starts-with(., 'Name:')] ",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "a2f6efee-28ec-4f79-afff-57960457ab1f",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//p[starts-with(., 'Name:')] ",
+      "targets": [],
+      "value": "Name: ${pizzaName}"
+    }, {
+      "id": "a10b0c07-fab2-42d2-b5b6-c70071f43e9d",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "xpath=//p[starts-with(., 'Tool:')] ",
+      "targets": [],
+      "value": "Tool: Knife"
+    }, {
+      "id": "735a9666-08fe-4f25-8180-08e214e3f9c6",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//p[starts-with(., 'Calories per slice:')]",
+      "targets": [],
+      "value": "calories"
+    }, {
+      "id": "f00bfd80-ca84-487f-a94f-83c1f8d9ab91",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return parseInt(${calories}.split(':')[1]) <= 600;",
+      "targets": [],
+      "value": "caloriesOk"
+    }, {
+      "id": "45c96e8b-2bef-4564-a304-0bd5ddd56dc9",
+      "comment": "",
+      "command": "assert",
+      "target": "caloriesOk",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "26874bca-f02b-49b8-8787-16afc6cf1818",
+      "comment": "",
+      "command": "click",
+      "target": "name=rate-5",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90802901-faa0-454e-941e-11309a0e1e19",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=rate-result",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "eab1c795-4720-4219-9b93-56e01ad884b0",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=rate-result",
+      "targets": [],
+      "value": "Please log in first."
     }]
   }],
   "suites": [{

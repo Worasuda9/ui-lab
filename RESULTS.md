@@ -42,10 +42,10 @@ Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
 Time:        17.679 s
-- Step 1.5, target chosen for Submit, and why the recorded one was fragile:
-- Step 1.6, commands changed, added or deleted after recording:
-- Step 1.6, the pizza names of run 1 and run 2, from the lines info: echo:
-- Step 1.6, the line Tests: of both runs:
+- Step 1.5, target chosen for Submit, and why the recorded one was fragile: css=.btn relies on general CSS class, which may be shared by other buttons or change with styling, so we changed to use this instead: xpath=//button[@type='submit'].
+- Step 1.6, commands changed, added or deleted after recording: changed those input commands that target id=floating_filled, to be specific path, also changed from manual fill the pizza name to be a script that able to create unique pizza name on each run. Also added those wait for element...
+- Step 1.6, the pizza names of run 1 and run 2, from the lines info: echo: run1: Lab Pizza 20261124-142249 run2: Lab Pizza 20261124-143452
+- Step 1.6, the line Tests: of both runs: run1: Test Suites: 1 passed, 1 total Tests: 2 passed, 2 total. run2: Test Suites: 1 passed, 1 total Tests: 2 passed, 2 total.
 - Step 1.7, one line of QP01customerTest.java that needs rewriting, and why:
 
 ## Part 2: Selenium WebDriver in Java
