@@ -1,6 +1,6 @@
 # UI lab results
 
-Tool parts that I chose:
+Tool parts that I chose: Selenium IDE and Robot Framework
 
 ## Part 0
 - Step 0.1, Chrome version: 158.0.8127.18 (Official Build) (arm64) 
@@ -48,27 +48,11 @@ Time:        17.679 s
 - Step 1.6, the line Tests: of both runs: run1: Test Suites: 1 passed, 1 total Tests: 2 passed, 2 total. run2: Test Suites: 1 passed, 1 total Tests: 2 passed, 2 total.
 - Step 1.7, one line of QP01customerTest.java that needs rewriting, and why:
 
-## Part 2: Selenium WebDriver in Java
-- Step 2.4, the failure line for the wrong title:
-- Step 2.15, QP01Test run 1, result and time:
-- Step 2.15, QP01Test run 2, result and time:
-- Step 2.20, full run 1, time and number of tests:
-- Step 2.20, full run 2, time and number of tests:
-
 ## Part 3: Robot Framework
 - robot --version: Robot Framework 7.5.1 (Python 3.13.11 on darwin)
 - Step 3.2, failure message for the wrong title: The Web Form Opens :: Open the web form and check its title. Title should have been 'Web Form' but was 'Web form'.
-- Step 3.8, run 1, result, elapsed time and pizza name:
-- Step 3.8, run 2, result, elapsed time and pizza name:
-
-## Part 4: Cypress
-- node --version, npm --version and npx cypress version:
-- Step 4.3, failure message for the wrong title:
-- Step 4.6, tool and calories in the answer of POST /api/pizza:
-- Step 4.7, the line of the admin list that shows your pizza:
-- Step 4.8, run 1, result, duration and pizza name:
-- Step 4.8, run 2, result, duration and pizza name:
-- Step 4.9 (optional), browser and result:
+- Step 3.8, run 1, result, elapsed time and pizza name: 00:00:15, Lab Pizza 20261124-161554
+- Step 3.8, run 2, result, elapsed time and pizza name: 00:00:15, Lab Pizza 20261124-161627
 
 ## Part B
 1.
